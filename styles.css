@@ -1,0 +1,77 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .flex {
+        flex-direction: inline;
+    }
+
+    .w-1/3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 639px) {
+    body {
+        width: 103%;
+    }
+}
+
+#button-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    margin-bottom: 0.5rem;
+
+}
+
+#button-wrapper {
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+#send-message-button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9b4de3;
+    border-radius: 9999px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out;
+}
+
+#send-message-button:hover {
+    background-color: #60a5fa;
+    ;
+}
+
+.hover-skill {
+    transition: transform 0.3s ease;
+}
+
+.hover-skill:hover {
+    transform: scale(1.1);
+}
+
+
